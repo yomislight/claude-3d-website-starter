@@ -28,7 +28,7 @@
 |---|---|
 | [skills/3d-product-website](skills/3d-product-website) | 可安装的 Claude Code skill（流程、参考文件、表单后端范例） |
 | [教程.md](教程.md) | 从零到上线的完整步骤，跟视频顺序一样 |
-| [工具清单.md](工具清单.md) | 7 个工具：做什么、去哪里找、要不要钱、免费额度怎么拿 |
+| [工具清单.md](工具清单.md) | 6 个工具：做什么、去哪里找、要不要钱、免费额度怎么拿 |
 | [提示词.md](提示词.md) | 做这个网站时真正用过、有效的指令，按步骤排好，可以直接复制 |
 | [参考法.md](参考法.md) | 怎么让 AI 做得好看：找参考、说清楚学哪一点、拆设计语言 |
 | [检查清单.md](检查清单.md) | 一个看起来很贵的网站要做对的五件事，加上手机版和上线前检查 |
@@ -41,7 +41,7 @@
 4. 每做完一版，拿 [检查清单.md](检查清单.md) 对一遍。
 5. 觉得不好看的时候，照 [参考法.md](参考法.md) 找一个参考给它。
 
-## 用到的 7 个工具
+## 用到的 6 个工具
 
 除了 Claude 会员，其他都可以免费用。详细用法见 [工具清单.md](工具清单.md)。
 
@@ -52,9 +52,9 @@
 | 图片变 3D | [TRELLIS.2](https://huggingface.co/spaces/microsoft/TRELLIS.2)（MIT，Hugging Face 免费额度） |
 | 建模、切零件 | [Blender](https://www.blender.org/)（Claude 通过 MCP 或脚本操作） |
 | 字体 | [Google Fonts](https://fonts.google.com/) |
-| 实时行情（选配） | 币安公开行情接口 |
 | 收邮箱、上线 | Cloudflare D1 ＋ Pages |
 
+实时行情（选配）可以接币安公开行情接口，见工具清单。
 网页 3D 用的是 [three.js](https://threejs.org/)（MIT），由 Claude 直接写进网站。
 自己的域名（例如 .com）要另外买，不在免费范围内。
 

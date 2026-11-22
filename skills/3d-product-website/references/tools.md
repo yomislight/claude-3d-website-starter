@@ -1,6 +1,6 @@
-# 工具清单：7 个工具
+# 工具清单：6 个工具
 
-做 BT-4 网站一共用了 7 个工具。除了 Claude 会员，其他都可以免费用。
+做 BT-4 网站一共用了 6 个工具。除了 Claude 会员，其他都可以免费用。另外列了一个选配的币安公开行情，只有做交易相关产品才需要。
 
 | 工具 | 做什么 | 要不要钱 |
 |---|---|---|
@@ -9,7 +9,7 @@
 | [TRELLIS.2](https://huggingface.co/spaces/microsoft/TRELLIS.2) | 一张图片变成 3D 模型 | 免费（Hugging Face 每日额度） |
 | [Blender](https://www.blender.org/) | 建模、把 3D 外壳切成能拆的零件 | 免费开源 |
 | [Google Fonts](https://fonts.google.com/) | 网站字体 | 免费，可商用 |
-| [币安公开行情](https://developers.binance.com/) | 实时 BTC 价格（选配） | 免费，不用注册、不用 key |
+| [币安公开行情](https://developers.binance.com/)（选配，不算在 6 个里） | 实时 BTC 价格 | 免费，不用注册、不用 key |
 | [Cloudflare](https://www.cloudflare.com/) | D1 存邮箱、Pages 上线 | 免费额度 |
 
 找灵感用的是 X 和大品牌官网，打开就能看，不算工具。
