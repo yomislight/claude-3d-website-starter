@@ -47,6 +47,14 @@
 
 👉 https://t.me/+fXqjJaVgaKZjYjVl
 
+## 致谢与参考
+
+这套做法参考了 Christian Peverelli 的视频〈[How to Build $10,000 Websites Using Claude Code](https://www.youtube.com/watch?v=qTWOkhytG0M)〉，包括「一万美金网站要做对的五件事」和「先写计划、分层做、统一设计、检查手机版、上线」的流程。我们换成了真实在卖的产品，工具也换成免费的替代品。
+
+他在视频里用了两个设计 skill，我们这次没装，有兴趣可以自己试：
+- [frontend-design](https://github.com/anthropics/skills)：Anthropic 官方，在 `anthropics/skills` 的 example-skills 里
+- UI UX Pro Max：第三方 skill，安装前请先看过它的内容
+
 ---
 
 视频：[YouTube · 优米洞察](https://www.youtube.com/channel/UCqJNSoB2GT6oMwh5opyQAww)
