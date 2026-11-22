@@ -6,10 +6,27 @@
 **先玩成品：** https://bt4-robot.pages.dev
 可以拖着转、一键 X 光、46 个零件拆开，还能换灯光。这个网站从头到尾一行代码都没手写。
 
+## 安装成 Claude Code skill
+
+装好之后，大家直接跟 Claude 说「帮我做一个 3D 产品网站」，它就会照这套流程一步一步带着做。
+
+**方法一：插件市场（推荐）**，在 Claude Code 里依次输入：
+
+```
+/plugin marketplace add yomislight/claude-3d-website-starter
+```
+
+```
+/plugin install 3d-product-website@yomi-skills
+```
+
+**方法二：手动复制**，把 [`skills/3d-product-website`](skills/3d-product-website) 整个文件夹放进 `~/.claude/skills/`，重开 Claude Code 就能用。
+
 ## 里面有什么
 
 | 文件 | 用途 |
 |---|---|
+| [skills/3d-product-website](skills/3d-product-website) | 可安装的 Claude Code skill（流程、参考文件、表单后端范例） |
 | [教程.md](教程.md) | 从零到上线的完整步骤，跟视频顺序一样 |
 | [工具清单.md](工具清单.md) | 7 个工具：做什么、去哪里找、要不要钱、免费额度怎么拿 |
 | [提示词.md](提示词.md) | 做这个网站时真正用过、有效的指令，按步骤排好，可以直接复制 |

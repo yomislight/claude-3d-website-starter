@@ -1,0 +1,17 @@
+{
+  "name": "yomi-skills",
+  "description": "优米洞察（yomi）的 Claude Code skills",
+  "owner": { "name": "yomislight" },
+  "plugins": [
+    {
+      "name": "3d-product-website",
+      "description": "不会写代码，也能用 Claude Code 做出一万美金级别的 3D 产品网站：3D 拖曳、X 光、拆解、滚动推镜头、邮箱表单、免费上线",
+      "version": "1.0.0",
+      "author": { "name": "yomislight" },
+      "homepage": "https://github.com/yomislight/claude-3d-website-starter",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/3d-product-website"]
+    }
+  ]
+}

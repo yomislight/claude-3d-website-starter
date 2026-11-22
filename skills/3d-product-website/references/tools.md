@@ -1,0 +1,77 @@
+# 工具清单：7 个工具
+
+做 BT-4 网站一共用了 7 个工具。除了 Claude 会员，其他都可以免费用。
+
+| 工具 | 做什么 | 要不要钱 |
+|---|---|---|
+| [Claude Code](https://claude.com/product/claude-code) | 写网站、调设计、上线，全部靠它 | 要付费会员（Pro 就够） |
+| [GPT Image](https://chatgpt.com/) | 画机器人的设计图（主视觉、爆炸图、三视图） | 免费（ChatGPT 免费账号就能生图，我们用的就是免费账号；次数限制以官方为准） |
+| [TRELLIS.2](https://huggingface.co/spaces/microsoft/TRELLIS.2) | 一张图片变成 3D 模型 | 免费（Hugging Face 每日额度） |
+| [Blender](https://www.blender.org/) | 建模、把 3D 外壳切成能拆的零件 | 免费开源 |
+| [Google Fonts](https://fonts.google.com/) | 网站字体 | 免费，可商用 |
+| [币安公开行情](https://developers.binance.com/) | 实时 BTC 价格（选配） | 免费，不用注册、不用 key |
+| [Cloudflare](https://www.cloudflare.com/) | D1 存邮箱、Pages 上线 | 免费额度 |
+
+找灵感用的是 X 和大品牌官网，打开就能看，不算工具。
+
+---
+
+## Claude Code
+
+1. 到 Claude 官网下载桌面版（Mac、Windows 都有），用邮箱注册登录。
+2. Claude Code 要付费会员才能用，免费账号不行。做这种网站，Pro 就够了。
+3. 登录后点上面的 **Code**，选一个空文件夹（例如桌面新建「我的网站」）。Claude 做的所有东西都放在这里。
+4. **权限**：默认每一步都会问你可不可以。刚开始建议保持默认，看它在做什么；熟了再改成自动。
+5. **模型**：选最新、最强的。做设计类的东西，模型越强效果越好。
+
+## GPT Image
+
+- 在 ChatGPT 里直接生图。
+- 提示词不用自己想：先让 Claude 写好机器人的设计，再让它写生图提示词，你复制贴上就好（见 [提示词.md](prompts.md) 第 4 条）。
+- 要三张图：正面主视觉、拆开的爆炸图、正面／侧面／背面三视图。三视图是后面所有 3D 的标准答案。
+
+## Hugging Face 和 TRELLIS.2
+
+- **Hugging Face** 可以理解成 AI 界的 GitHub：大家把 AI 模型放在上面，很多还做成网页版（叫 Space），打开就能用，不用自己有显卡。
+- **TRELLIS.2** 是微软开源的图生 3D 模型（MIT 授权），给它一张图，生成带贴图的 3D 模型。
+- **免费额度**（Hugging Face 官方文档，ZeroGPU）：
+
+| 账号 | 每天 GPU 额度 |
+|---|---|
+| 不登录 | 2 分钟 |
+| 免费账号（验证邮箱） | 5 分钟 |
+| PRO 付费 | 40 分钟 |
+
+- 生成一次约 2 分钟，免费账号一天够生成两次。
+- 用法：图片先裁成正方形、背景弄干净 → 打开 Space → 上传 → 生成 → 下载 GLB。
+- 生成结果是一整块、20 多 MB，网页跑不动，下一步交给 Blender 处理。
+
+## Blender
+
+- 免费开源的 3D 软件。不用学操作，让 Claude 来控制它。
+- 可以装 Blender MCP（例如 [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp)，MIT）。MCP 像一个插头，插上后 Claude 就能直接在 Blender 里建模、切零件、上材质、出图。
+- 也可以让 Claude 写 Blender 脚本在后台跑，效果一样。
+- 我们用它做了两件事：
+  1. 照三视图建一版机器人（约 20 分钟）。
+  2. 处理 TRELLIS.2 的结果：减面、按身体部位切成 20 块外壳、补骨架和内部零件、压缩到约 3 MB。
+
+## Google Fonts
+
+- 免费字体库，可商用。
+- 跟 Claude 说「用 Google Fonts 的宽体字」，它会自己接上。BT-4 用的是 Archivo（宽度 125）和 Noto Sans TC。
+
+## 币安公开行情（选配）
+
+- 币安专门给大家读价格的公开接口：`data-api.binance.vision`（REST）、`data-stream.binance.vision`（WebSocket）。
+- 只读、不用注册、不用 key、不会碰到任何账户。
+- 部分地区（例如美国）连不上，网站要做好连不上时照常运作。
+- 网站上要写明：只显示公开数据，不构成投资建议。
+- 卖的不是交易相关产品，就不需要这一个。
+
+## Cloudflare
+
+- 先注册一个免费账号。
+- **D1**：免费数据库，免费额度每天写入 10 万笔，收订阅邮箱足够。
+- **Pages**：免费网站托管，会送一个 `xxx.pages.dev` 网址。
+- 跟 Claude 说「部署到 Cloudflare Pages」，它会叫你在浏览器登录授权，剩下的它来做。
+- 自己的域名（例如 .com）要另外买，不在免费范围内。
